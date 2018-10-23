@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.TextLoginPassword = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.TextLoginName = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.TextEmail = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -45,13 +46,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PicCar = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -87,6 +87,16 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(600, 568);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QaracopDS_App.Properties.Resources.administrator_icon_5154;
+            this.pictureBox2.Location = new System.Drawing.Point(107, 76);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(73, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 57;
+            this.pictureBox2.TabStop = false;
             // 
             // TextLoginPassword
             // 
@@ -259,7 +269,7 @@
             this.BtnSignUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSignUp.BackgroundImage")));
             this.BtnSignUp.ButtonText = "SIGN UP";
             this.BtnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSignUp.Font = new System.Drawing.Font("1979", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSignUp.ForeColor = System.Drawing.Color.Black;
             this.BtnSignUp.IdleBorderThickness = 1;
             this.BtnSignUp.IdleCornerRadius = 20;
@@ -285,7 +295,7 @@
             this.BtnSignIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSignIn.BackgroundImage")));
             this.BtnSignIn.ButtonText = "SIGN IN";
             this.BtnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSignIn.Font = new System.Drawing.Font("1979", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSignIn.ForeColor = System.Drawing.Color.Black;
             this.BtnSignIn.IdleBorderThickness = 1;
             this.BtnSignIn.IdleCornerRadius = 20;
@@ -324,6 +334,7 @@
             this.BtnLogin.Size = new System.Drawing.Size(228, 37);
             this.BtnLogin.TabIndex = 23;
             this.BtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // TextPassword
             // 
@@ -417,11 +428,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("1979", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(52, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 8);
+            this.label1.Size = new System.Drawing.Size(154, 13);
             this.label1.TabIndex = 16;
             this.label1.Text = "QARACOP DRIVING SCHOOL";
             // 
@@ -447,16 +458,6 @@
             this.PicCar.TabIndex = 53;
             this.PicCar.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QaracopDS_App.Properties.Resources.administrator_icon_5154;
-            this.pictureBox2.Location = new System.Drawing.Point(107, 76);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 69);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 57;
-            this.pictureBox2.TabStop = false;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,11 +472,11 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
